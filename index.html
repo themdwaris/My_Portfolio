@@ -1,257 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>themdwaris</title>
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/android-chrome-512x512.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- icons -->
 
     <!-- animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- style -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- ----style----- -->
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-     
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- ----------header---------- -->
 
     <header id="header">
-        <div class="container universal-padding">
-            <div class="navbar">
-                <nav>
-                    <div class="logo"><h1><span>M</span>d.</h1></div>
-                    <box-icon id="open" name='chevron-left'color='black' onclick="openMenu()"></box-icon>
-                    <box-icon id="close" name='chevron-right'color='black'onclick="closeMenu()"></box-icon> 
-                  
-                    <ul id="openMenu" onclick="closeMenu()">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#mywork">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+      <div class="container universal-padding">
+        <div class="navbar">
+          <nav>
+            <div class="logo">
+              <h1><span>M</span>d.</h1>
             </div>
-         
-            <div class="header-text" data-aos="fade-right">
-                <p>Front-End Developer</p>
-                <h1>Hi, I'm <span>Mohammad</span> Waris<br>From India</h1>
-            </div>
-            <div class="loadcv" ><a href="images/MohammadR.pdf" download class="btn btn2"><ion-icon name="arrow-down-outline"></ion-icon> Download CV</a></div>
+            <box-icon
+              id="open"
+              name="chevron-left"
+              color="black"
+              onclick="openMenu()"
+            ></box-icon>
+            <box-icon
+              id="close"
+              name="chevron-right"
+              color="black"
+              onclick="closeMenu()"
+            ></box-icon>
+
+            <ul id="openMenu" onclick="closeMenu()">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#mywork">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
+
+        <div class="header-text" data-aos="fade-right">
+          <p>Front-End Developer</p>
+          <h1>Hi, I'm <span>Mohammad</span> Waris<br />From India</h1>
+        </div>
+        <div class="loadcv">
+          <a href="images/MohammadR.pdf" download class="btn btn2"
+            ><ion-icon name="arrow-down-outline"></ion-icon> Download CV</a
+          >
+        </div>
+      </div>
     </header>
 
     <!-- ------------about section----------- -->
 
     <div id="about">
-        <div class="container universal-padding">
-            <div class="row">
-                <div class="col-1" data-aos="fade-right">
-                    <img src="images/about-img1.jpg" alt="">
-                </div>
-                <div class="col-2" data-aos="fade-right">
-                    <h1>About me</h1>
-                    <p>Hey there, I'm Mohammad Waris 'Front-End Web Dev' and i have completed my    Bachelor's. Now i have skilled HTML,CSS,JS,Reactjs for Web Development and also have knowledge about Bootstrap,Tailwindcss framework, and Kotlin/XML, C++ for Andriod Development. Have a nice day! &#x1F643;</p>
+      <div class="container universal-padding">
+        <div class="row">
+          <div class="col-1" data-aos="fade-right">
+            <img src="images/about-img1.jpg" alt="" />
+          </div>
+          <div class="col-2" data-aos="fade-right">
+            <h1>About me</h1>
+            <p>
+              Hey there, I'm Mohammad Waris, a dedicated and passionate Frontend
+              Web Developer with two years of hands-on experience in building
+              and maintaining responsive websites and web applications.
+              Proficient in HTML, CSS, Tailwindcss, JavaScript, and modern
+              frameworks and library such as Reactjs and Next.js. Have a nice day!
+              &#x1F643;
+            </p>
 
-                    <div class="tab-titles">
-                        <div id="rems" class="tab-links active-link" onclick="openSkill()"><p>Skills</p></div>
-                        <div id="reme" class="tab-links" onclick="openExp()"><p>Experience</p></div>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skill" data-aos="fade-right">
-                        <ul>
-                            <li><span>Web Development</span><br>HTML5, CSS, JS, Reactjs</li>
-                            <li><span>Web Designing</span><br>Bootstrap, Tailwind, PhotoShop</li>
-                            <li><span>Andriod Development</span><br>Kotlin/XML, C++</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="exp">
-                        <ul>
-                            <li><span>Front-End Developer</span><br>HTML5, CSS, JS, Reactjs</li>
-                            <li><span>1.5yr+</span><br>Bootstrap, Tailwind</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <div
+                id="rems"
+                class="tab-links active-link"
+                onclick="openSkill()"
+              >
+                <p>Skills</p>
+              </div>
+              <div id="reme" class="tab-links" onclick="openExp()">
+                <p>Experience</p>
+              </div>
             </div>
+
+            <div
+              class="tab-contents active-tab"
+              id="skill"
+              data-aos="fade-right"
+            >
+              <ul>
+                <li>
+                  <span>Web Development</span><br />HTML5, CSS, JavaScript, Reactjs,Nextjs,Redux
+                </li>
+                <li>
+                  <span>Web Designing</span><br />Bootstrap, Tailwind, PhotoShop
+                </li>
+                <li><span>Andriod Development</span><br />Kotlin/XML, C++</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="exp">
+              <ul>
+                <li>
+                  <span>Front-End Developer</span><br />HTML5, CSS, JS,
+                  Tailwindcss, Reactjs, Redux, Nextjs
+                </li>
+                <li><span>1.5yr+</span><br />Bootstrap, Tailwindcss</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- ----------services section----------- -->
 
-    <div id="services"class="universal-padding">
-        <h1 class="h1">My Services</h1>
-        <div class="service-list">
-            <div class="service-box" data-aos="fade-right">
-                <i class="fa-solid fa-laptop-code"></i>
-                <h2>Web Development</h2>
-                <p>I have skilled of, HTML, CSS, Javascript, Reactjs, Bootstrap, Tailwind, Nodejs, ExpressJs, MongoDB, MySql</p>
-                <a href="">Read more</a>
-            </div>
-            <div class="service-box" data-aos="fade-right">
-                <i class="fa-solid fa-compass-drafting"></i>
-                <h2>UI/UX Design</h2>
-                <p>Figma, PhotoShop, Adobe illustrator, Graphic design, Web Design, </p>
-                <a href="">Read more</a>
-            </div>
-            <div class="service-box" data-aos="fade-right">
-                <i class="fa-brands fa-android"></i>
-                <h2>Andriod Dev</h2>
-                <p>Kotlin/XML, Core Java, C++, and i have also build some Andriod App, Birthday Card App, Online Meme App uisng Kotlin/XML</p>
-                <a href="">Read more</a>
-            </div>
-
+    <div id="services" class="universal-padding">
+      <h1 class="h1">My Services</h1>
+      <div class="service-list">
+        <div class="service-box" data-aos="fade-right">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            I have skilled of, HTML, CSS, Javascript, Reactjs,Nextjs,Redux,
+            Tailwind, Nodejs, ExpressJs, MongoDB, MySql
+          </p>
+          <a href="">Read more</a>
         </div>
+        <div class="service-box" data-aos="fade-right">
+          <i class="fa-solid fa-compass-drafting"></i>
+          <h2>UI/UX Design</h2>
+          <p>
+            Figma, PhotoShop, Adobe illustrator, Graphic design, Web Design,
+          </p>
+          <a href="">Read more</a>
+        </div>
+        <div class="service-box" data-aos="fade-right">
+          <i class="fa-brands fa-android"></i>
+          <h2>Andriod Dev</h2>
+          <p>
+            Kotlin/XML, Core Java, C++, and i have also build some Andriod App,
+            Birthday Card App, Online Meme App uisng Kotlin/XML
+          </p>
+          <a href="">Read more</a>
+        </div>
+      </div>
     </div>
 
     <!-- --------My Work--------- -->
 
     <div id="mywork" class="universal-padding">
-        <h1 class="h1">My Projects</h1>
-        <div class="container">
-
-            <div class="work-box" data-aos="fade-up"><img src="images/work6.jpg" alt="">
-                <div class="layer">
-                    <h2>YouTube Clone</h2>
-                    <p>Fully responsive and functional YouTube clone using Reactjs and Rappid YouTube API and for styling i used Tailwindcss, SEE LIVE ↙️ click on the link icon.</p>
-                    <a href="https://youtubelitebymdd.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work-box" data-aos="fade-up"><img src="images/work7.jpg" alt="">
-                <div class="layer">
-                    <h2>MyShow Movie App</h2>
-                    <p>Movie website using Reactjs ,Redux and SCSS, in this project you can search any movie or TV shows and you can also apply filters on the search ,and you can visit the details page of that movie or TV show.</p>
-                    <a href="https://myshowbymdd.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <div class="work-box" data-aos="fade-up"><img src="images/work1.jpg" alt="">
-                <div class="layer">
-                    <h2>E-Commerce Website</h2>
-                    <p>Fully responsive modern e-commerce website named Vite, using Reactjs and real api, you can add product to cart and can also delt the product from cart, to see live click on the link icon.</p>
-                    <a href="https://viteappbymdd.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <div class="work-box" data-aos="fade-up"><img src="images/myntra3.jpg" alt="">
-                <div class="layer">
-                    <h2>Myntra Clone</h2>
-                    <p>Fully responsive Myntra clone, ecommerce website using HTML, CSS, Javascript check out the by clicking on the link icon.</p>
-                    <a href="https://myntraclonebymdd.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <div class="work-box" data-aos="fade-up"><img src="images/work2.jpg" alt="">
-                <div class="layer">
-                    <h2>Blog App</h2>
-                    <p>Fully responsive modern, blog website using Reactjs, and dummy api to see live click on the link icon.</p>
-                    <a href="https://blogappbymdd.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <div class="work-box" data-aos="fade-up"><img src="images/work4.jpg" alt="">
-                <div class="layer">
-                    <h2>Digital Agency Website</h2>
-                    <p>Fully responsive modern Agency, website using HTML, CSS, Javascript check out the by clicking on the link icon.</p>
-                    <a href="https://uianss.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-    
-            <div class="work-box" data-aos="fade-up"><img src="images/work3.jpg" alt="">
-                <div class="layer">
-                    <h2>Digital Marketing Website</h2>
-                    <p>Fully responsive modern Digital Marketing, website using HTML, CSS, Javascript check out the by clicking on the link icon.</p>
-                    <a href="https://innohubb.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <div class="work-box" data-aos="fade-up"><img src="images/work5.jpg" alt="">
-                <div class="layer">
-                    <h2>Dental Website</h2>
-                    <p>Fully responsive modern Dental, website using HTML, CSS, Javascript check out the by clicking on the link icon.</p>
-                    <a href="https://dentlishh.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-             <div class="work-box" data-aos="fade-up"><img src="images/work8.png" alt="">
-                <div class="layer">
-                    <h2>To Do App</h2>
-                    <p>This is a Simple To Do List app build using Reactjs, Tailwindcss and local storage , in this app you can add, delete, and update your list items. SEE LIVE ↙️</p>
-                    <a href="https://reacttodobymd.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-
+      <h1 class="h1">My Projects</h1>
+      <div class="container">
+        <div class="work-box" data-aos="fade-up">
+          <img src="images/work6.jpg" alt="" />
+          <div class="layer">
+            <h2>YouTube Clone</h2>
+            <p>
+              Fully responsive and functional YouTube clone using Reactjs and
+              Rappid YouTube API and for styling i used Tailwindcss, SEE LIVE ↙️
+              click on the link icon.
+            </p>
+            <a href="https://youtubelitebymdd.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
         </div>
-        <a href="" class="btn">See more</a>
+        <div class="work-box" data-aos="fade-up">
+          <img src="images/work7.jpg" alt="" />
+          <div class="layer">
+            <h2>MyShow Movie App</h2>
+            <p>
+              Movie website using Reactjs ,Redux and SCSS, in this project you
+              can search any movie or TV shows and you can also apply filters on
+              the search ,and you can visit the details page of that movie or TV
+              show.
+            </p>
+            <a href="https://myshowbymdd.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="work-box" data-aos="fade-up">
+          <img src="images/work1.jpg" alt="" />
+          <div class="layer">
+            <h2>E-Commerce Website</h2>
+            <p>
+              Fully responsive modern e-commerce website named Vite, using
+              Reactjs and real api, you can add product to cart and can also
+              delt the product from cart, to see live click on the link icon.
+            </p>
+            <a href="https://viteappbymdd.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="work-box" data-aos="fade-up">
+          <img src="images/myntra3.jpg" alt="" />
+          <div class="layer">
+            <h2>Myntra Clone</h2>
+            <p>
+              Fully responsive Myntra clone, ecommerce website using HTML, CSS,
+              Javascript check out the by clicking on the link icon.
+            </p>
+            <a href="https://myntraclonebymdd.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="work-box" data-aos="fade-up">
+          <img src="images/work2.jpg" alt="" />
+          <div class="layer">
+            <h2>Blog App</h2>
+            <p>
+              Fully responsive modern, blog website using Reactjs, and dummy api
+              to see live click on the link icon.
+            </p>
+            <a href="https://blogappbymdd.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="work-box" data-aos="fade-up">
+          <img src="images/work4.jpg" alt="" />
+          <div class="layer">
+            <h2>Digital Agency Website</h2>
+            <p>
+              Fully responsive modern Agency, website using HTML, CSS,
+              Javascript check out the by clicking on the link icon.
+            </p>
+            <a href="https://uianss.netlify.app" target="_blank"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="work-box" data-aos="fade-up">
+          <img src="images/work3.jpg" alt="" />
+          <div class="layer">
+            <h2>Digital Marketing Website</h2>
+            <p>
+              Fully responsive modern Digital Marketing, website using HTML,
+              CSS, Javascript check out the by clicking on the link icon.
+            </p>
+            <a href="https://innohubb.netlify.app" target="_blank"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="work-box" data-aos="fade-up">
+          <img src="images/work5.jpg" alt="" />
+          <div class="layer">
+            <h2>Dental Website</h2>
+            <p>
+              Fully responsive modern Dental, website using HTML, CSS,
+              Javascript check out the by clicking on the link icon.
+            </p>
+            <a href="https://dentlishh.netlify.app" target="_blank"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work-box" data-aos="fade-up">
+          <img src="images/work8.png" alt="" />
+          <div class="layer">
+            <h2>To Do App</h2>
+            <p>
+              This is a Simple To Do List app build using Reactjs, Tailwindcss
+              and local storage , in this app you can add, delete, and update
+              your list items. SEE LIVE ↙️
+            </p>
+            <a href="https://reacttodobymd.netlify.app" target="_blank"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <a href="" class="btn">See more</a>
     </div>
 
     <!-- --------contact section---------- -->
 
     <div id="contact" class="universal-padding">
-        <div class="row">
-            <div class="left-contact" data-aos="fade-right">
-                <h1>Contact me</h1>
-               <p><i class="fas fa-paper-plane"></i>example@gmail.com</p>
-               <p><i class="fas fa-phone-square-alt"></i>1234939779</p>
-               <div class="social-link" data-aos="fade-right">
-                    <a href="https://www.linkedin.com/in/themdwaris" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/themdwaris" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://mobile.twitter.com/themdwaris" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/themdwaris/" target="_blank"><i class="fab fa-instagram"></i></a>
-               </div>
-               <div class="loadcv"><a href="images/MY_RESUME2.pdf" download class="btn btn2"><ion-icon name="arrow-down-outline"></ion-icon> Download CV</a></div>
-            </div>
-            <div class="right-contact" data-aos="fade-right">
-                <form action="">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="Message" id=""rows="6" placeholder="Message" required></textarea>
-                    <button class="btn btn2"type="submit">Send</button>
-                </form>
-            </div>
+      <div class="row">
+        <div class="left-contact" data-aos="fade-right">
+          <h1>Contact me</h1>
+          <p><i class="fas fa-paper-plane"></i>example@gmail.com</p>
+          <p><i class="fas fa-phone-square-alt"></i>1234939779</p>
+          <div class="social-link" data-aos="fade-right">
+            <a href="https://www.linkedin.com/in/themdwaris" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/themdwaris" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://mobile.twitter.com/themdwaris" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/themdwaris/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+          <div class="loadcv">
+            <a href="images/MY_RESUME2.pdf" download class="btn btn2"
+              ><ion-icon name="arrow-down-outline"></ion-icon> Download CV</a
+            >
+          </div>
         </div>
+        <div class="right-contact" data-aos="fade-right">
+          <form action="">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea
+              name="Message"
+              id=""
+              rows="6"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button class="btn btn2" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
     </div>
     <!-- ----------footer------- -->
 
     <footer class="universal-padding">
-        <div class="copyright">
-            <p >Made with ❤️ by Mohammad Waris / <a href="https://themdwaris.netlify.app/">@themdwaris</a></p>
-            <p>Copyright &copy; <span id="span"></span> All Rights Reserved</p>
-        </div>
+      <div class="copyright">
+        <p>
+          Made with ❤️ by Mohammad Waris /
+          <a href="https://themdwariss.netlify.app/">@themdwaris</a>
+        </p>
+        <p>Copyright &copy; <span id="span"></span> All Rights Reserved</p>
+      </div>
     </footer>
-    
 
-    
     <script>
-        const year = new Date().getFullYear();
-        document.getElementById("span").innerHTML=year;
+      const year = new Date().getFullYear();
+      document.getElementById("span").innerHTML = year;
     </script>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <script src="js/app.js"></script>
     <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-  ></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset:200,
-      duration:800
-    });
-  </script>
-</body>
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 800,
+      });
+    </script>
+  </body>
 </html>
